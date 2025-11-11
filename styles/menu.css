@@ -14,8 +14,44 @@ body {
 /* ===== Header ===== */
 header {
     background-color: rgba(139, 0, 0, 0.8);
+    color: #FAFAFA;
     padding: 20px 0;
     position: sticky;
     top: 0;
     z-index: 1000;
+    backdrop-filter: blur(2px);
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.6rem;
+    font-weight: bold;
+
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+nav ul li a {
+    color: #FAFAFA;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+    color: #ff2e63;
 }
