@@ -203,6 +203,7 @@ nav ul li a.active {
         transform: translateY(0);
     }
 }
+
 /* ===== Footer Section ===== */
 footer {
     background-color: #1c1c1c;
@@ -292,3 +293,156 @@ footer {
 }
 
 
+/* ====Responsive Design */
+
+@media(max-width:992px) {
+    .container {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        gap: 15px;
+
+    }
+
+    .menu h2 {
+        font-size: 2.2rem;
+    }
+
+    .menu-items {
+        gap: 25px;
+    }
+
+    .menu-card {
+        width: 230px;
+        height: 340px;
+    }
+
+    .offer-content {
+        flex-direction: column;
+        text-align: center;
+        gap: 40px;
+    }
+
+    .offer-text {
+        max-width: 90%;
+    }
+
+    .offer-text h2 {
+        font-size: 2.2rem;
+    }
+
+    .offer-image img {
+        max-width: 80%;
+    }
+
+    .footer-container {
+        justify-content: center;
+        text-align: center;
+    }
+
+    .footer-section {
+        flex: 1 1 45%;
+    }
+}
+
+@media (max-width:576px) {
+    header {
+        padding: 15px 0;
+    }
+
+    .logo {
+        font-size: 1.3rem;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .menu {
+        padding: 40px 10px;
+    }
+
+    .menu h2 {
+        font-size: 1.9rem;
+        margin-bottom: 35px;
+    }
+
+    .menu-card {
+        width: 90%;
+        height: auto;
+    }
+
+    .menu-card img {
+        height: 160px;
+    }
+
+    .offer-content {
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .offer-text h2 {
+        font-size: 1.9rem;
+    }
+
+    .offer-text p {
+        font-size: 0.95rem;
+    }
+
+    .offer-text button {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+    }
+
+    .offer-image img {
+        width: 90%;
+        border-radius: 20px;
+    }
+
+    footer {
+        padding: 10px 0 20px;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+        gap: 25px;
+    }
+
+    .footer-section {
+        flex: 1 1 100%;
+    }
+
+    .footer-section h3 {
+        font-size: 1.2rem;
+    }
+
+    .footer-bottom p {
+        font-family: 0.85rem;
+    }
+}
+
+@media(min-width:1200px) {
+    .container {
+        max-width: 1200px;
+    }
+
+    .menu-card {
+        width: 280px;
+        height: 380px;
+    }
+
+    .offer-image img {
+        max-width: 500px;
+    }
+
+    .offer-text h2 {
+        font-size: 2.8rem;
+    }
+}
